@@ -930,44 +930,44 @@ font-size: 16px;
 margin-top: 6px;
 color: var(--black-color1);
   }
-  .container7 form{
+  .container1 .sec2 form{
     background: #fff;
     padding: 14px 18px;
-    width: auto;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     border-radius: 4px;
 }
-.container7 form input, .container7 form select{
+.container1 .sec2 form input, .container1 .sec2 form select{
     padding: 8px;
     border: 1px solid black;
     border-radius: 2px;
     font-size: 14px;
 }
-.container7 form input::placeholder, .container7 form select::placeholder,.container7 form option{
+.container1 .sec2 form input::placeholder, .container1 .sec2 form select::placeholder,.container1 .sec2 form option{
     font-size: 14px;
     color: var(--black-color1);
 }
-.container7 form input, .container7 h2{
+.container1 .sec2 form input, .container1 .sec2 h2{
     letter-spacing: 1px;
     font-size: 14px;
     color: var(--black-color1);
 }
-.container7 h2{
+.container1 .sec2 h2{
     letter-spacing: 1px;
     font-size: var(--font-size2);
 }
-.container7 form .experience label{
+.container1 .sec2 form .experience label{
     font-size: 13px;
 
 }
-.container7 form #experience{
+.container1 .sec2 form #experience{
     font-size: var(--font-size1);
     color: var(--black-color1);
     margin: 15px 0;
 }
-.container7 form button{
+.container1 .sec2 form button{
     width: auto;
     background: var(--text-color);
     padding: 8px;
@@ -980,7 +980,7 @@ color: var(--black-color1);
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-.container7 form button:hover{
+.container1 .sec2 form button:hover{
     color: var(--text-color);
     border: 2px solid var(--text-color);
     background: #fff;

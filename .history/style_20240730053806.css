@@ -933,7 +933,7 @@ color: var(--black-color1);
   .container7 form{
     background: #fff;
     padding: 14px 18px;
-    width: auto;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 12px;
