@@ -116,7 +116,7 @@
 <div class="container3">
     <div class="content">
         <h2><span>MumbaiCodingClub</span><br> Provides Course <br>Completion Certificate</h2>
-        <!-- <button>Download<i class="fa-solid fa-arrow-right"></i></button> -->
+        <button>Download<i class="fa-solid fa-arrow-right"></i></button>
     </div>
     <img src="assests/certifiacte.jpg" alt="">
 </div>
@@ -129,11 +129,11 @@
         <div class="sec-logo">
         <img src="assests/logos/MCC logo.svg" alt="">
         <div class="row2">
-          <a href="https://www.linkedin.com/company/mumbai-coding-club/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/mumbaicodingclub/?igshid=ZDdkNTZiNTM%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <!-- <i class="fa-brands fa-x-twitter"></i> -->
-          <a href="https://www.facebook.com/people/Mumbai-Coding-Club/100083680141795/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://wa.me/919702328507"><i class="fa-brands fa-whatsapp" target="_blank"></i></a>
+          <i class="fa-brands fa-linkedin-in"></i> 
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-whatsapp"></i>
         </div>
       </div>
         <div class="sec-content">
@@ -209,47 +209,10 @@
         <span id="span"><i class="fa-solid fa-xmark"></i></span>
         <h3>ENROLL</h3>
         <form action="">
-            <input type="text" name="fullname" id="name" class="input" placeholder="Enter Name" required>
-            <input type="email" name="email" id="email" class="input" placeholder="Enter Email" required>
-            <input type="phone" name="phone" id="phone" class="input" placeholder="Enter Phone Number" required>
-            <input type="phone" name="course" id="course" class="input" placeholder="Course" disabled>
-
-            <select id="year" name="year" required>
-                <option value="" disabled selected>Graduation Year</option>
-            </select>
-            <div class="experience">
-                <label id="experience">Experience</label>
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="tech_role"
-                        value="Working Professional - Technical Roles">
-                    <label for="">Working Professional - Technical Roles</label>
-                </div>
-
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="none_tect_role"
-                        value="Working Professional - Non Technical">
-                    <label for="">Working Professional - Non Technical</label>
-                </div>
-
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="final_year" value="College Student - Final Year">
-                    <label for="">College Student - Final Year</label>
-                </div>
-
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="pre-finale_year"
-                        value="College Student - 1st to Pre-final Year">
-                    <label for="">College Student - 1st to Pre-final Year</label>
-                </div>
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="other" value="Other">
-                    <label for="">Other</label>
-                </div>
-
-            </div>
-
-            <button>Submit</button>
-
+            <input type="text" name="name" id="fullname" placeholder="Full Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="number" name="code" id="code" placeholder="Course Code">
+            <button>Download</button>
         </form>
     </div>
 </div>
@@ -286,18 +249,5 @@
             }
         });
     </script>
-
-<script>
-    const startYear = 2000;
-    const endYear = 2030;
-    const yearDropdown = document.getElementById('year');
-
-    for (let year = startYear; year <= endYear; year++) {
-        const option = document.createElement('option');
-        option.value = year;
-        option.text = year;
-        yearDropdown.appendChild(option);
-    }
-</script>
 </body>
 </html>

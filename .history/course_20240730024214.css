@@ -228,7 +228,7 @@ body{
 }
 .modal-content{
     background-color: #E8F7F2;
-    margin: 5rem auto auto;
+    margin: auto;
     padding: 28px 24px;
     width: max-content;
     border-radius: 20px;

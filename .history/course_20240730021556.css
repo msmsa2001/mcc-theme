@@ -117,7 +117,7 @@ body{
     height: max-content;
 }
 .container2 .sec2 .course-info h2{
-    background: var(--text-color);
+    background: linear-gradient(to right,var(--text-color),var(--text-color2)50%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: var(--font-size2);
@@ -162,7 +162,7 @@ body{
 .container2 .sec2 .course-info button{
     width: 100%;
     margin-top: 1.8rem;
-    background: var(--text-color);
+    background: linear-gradient(to right,var(--text-color),var(--text-color2));
     border: none;
     padding: 10px 0;
     border-radius: 4px;
@@ -189,7 +189,7 @@ body{
     font-weight: 600;
 }
 .container3 .content h2 span{
-    color: var(--text-color);
+    color: var(--text-color2);
 
 }
 .container3 .content button{
@@ -290,17 +290,17 @@ form input.has-content {
     gap: 12px;
     border-radius: 4px;
 }
-.modal .modal-content form input, .modal .modal-content form select{
+.modal .modal-content form input, .container1 .sec2 form select{
     padding: 8px;
     border: 1px solid black;
     border-radius: 2px;
     font-size: 14px;
 }
-.modal .modal-content form input::placeholder, .modal .modal-content form select::placeholder,.container1 .sec2 form option{
+.modal .modal-content form input::placeholder, .container1 .sec2 form select::placeholder,.container1 .sec2 form option{
     font-size: 14px;
     color: var(--black-color1);
 }
-.modal .modal-content form input, .modal .modal-content h2{
+.modal .modal-content form input, .container1 .sec2 h2{
     letter-spacing: 1px;
     font-size: 14px;
     color: var(--black-color1);

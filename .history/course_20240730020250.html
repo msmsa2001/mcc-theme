@@ -107,7 +107,7 @@
             </div>
             </div>
             <h3><i class="fa-solid fa-indian-rupee-sign"></i> 40,000</h3>
-            <button onclick="openEnrollModal()">ENROLL</button>
+            <button>ENROLL</button>
         </div>
     </div>
 </div>
@@ -116,7 +116,7 @@
 <div class="container3">
     <div class="content">
         <h2><span>MumbaiCodingClub</span><br> Provides Course <br>Completion Certificate</h2>
-        <!-- <button>Download<i class="fa-solid fa-arrow-right"></i></button> -->
+        <button onclick="openDownlodaCertificateModal()">Download<i class="fa-solid fa-arrow-right"></i></button>
     </div>
     <img src="assests/certifiacte.jpg" alt="">
 </div>
@@ -129,11 +129,11 @@
         <div class="sec-logo">
         <img src="assests/logos/MCC logo.svg" alt="">
         <div class="row2">
-          <a href="https://www.linkedin.com/company/mumbai-coding-club/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/mumbaicodingclub/?igshid=ZDdkNTZiNTM%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <!-- <i class="fa-brands fa-x-twitter"></i> -->
-          <a href="https://www.facebook.com/people/Mumbai-Coding-Club/100083680141795/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://wa.me/919702328507"><i class="fa-brands fa-whatsapp" target="_blank"></i></a>
+          <i class="fa-brands fa-linkedin-in"></i> 
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-whatsapp"></i>
         </div>
       </div>
         <div class="sec-content">
@@ -187,7 +187,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7540.350352211677!2d72.88528653657487!3d19.099969516685178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87a7b146d75%3A0x76380d8179575d82!2sLokmanya%20Tilak%20Nagar%2C%20Saki%20Naka%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721714563501!5m2!1sen!2sin" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
 
-<!-- <div class="modal" id="modal">
+<div class="modal" id="modal">
     <div class="modal-position">
     <div class="modal-content">
         <span id="span"><i class="fa-solid fa-xmark"></i></span>
@@ -201,64 +201,13 @@
         </form>
     </div>
 </div>
-</div> -->
-
-<div class="modal" id="modal">
-    <div class="modal-position">
-    <div class="modal-content">
-        <span id="span"><i class="fa-solid fa-xmark"></i></span>
-        <h3>ENROLL</h3>
-        <form action="">
-            <input type="text" name="fullname" id="name" class="input" placeholder="Enter Name" required>
-            <input type="email" name="email" id="email" class="input" placeholder="Enter Email" required>
-            <input type="phone" name="phone" id="phone" class="input" placeholder="Enter Phone Number" required>
-            <input type="phone" name="course" id="course" class="input" placeholder="Course" disabled>
-
-            <select id="year" name="year" required>
-                <option value="" disabled selected>Graduation Year</option>
-            </select>
-            <div class="experience">
-                <label id="experience">Experience</label>
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="tech_role"
-                        value="Working Professional - Technical Roles">
-                    <label for="">Working Professional - Technical Roles</label>
-                </div>
-
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="none_tect_role"
-                        value="Working Professional - Non Technical">
-                    <label for="">Working Professional - Non Technical</label>
-                </div>
-
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="final_year" value="College Student - Final Year">
-                    <label for="">College Student - Final Year</label>
-                </div>
-
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="pre-finale_year"
-                        value="College Student - 1st to Pre-final Year">
-                    <label for="">College Student - 1st to Pre-final Year</label>
-                </div>
-                <div class="radio-sec">
-                    <input type="radio" name="experience" id="other" value="Other">
-                    <label for="">Other</label>
-                </div>
-
-            </div>
-
-            <button>Submit</button>
-
-        </form>
-    </div>
 </div>
-</div>
+
 
     <script>
         document.querySelectorAll('.course-tab').forEach(tab => {
             tab.addEventListener('click', () => {
-                document.querySelectorAll('.course-tab').forEach(item => item.classList.remove('active'));
+                document.querySelectorAll('.tab').forEach(item => item.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(item => item.classList.remove('active'));
     
                 tab.classList.add('active');
@@ -270,7 +219,7 @@
     <script>
         var modal=document.getElementById('modal');
         var span=document.getElementById('span');
-      function openEnrollModal(){
+      function openDownlodaCertificateModal(){
         modal.style.display='block';
         document.body.style.overflow = 'auto'; // Enable background scroll
 
@@ -286,18 +235,5 @@
             }
         });
     </script>
-
-<script>
-    const startYear = 2000;
-    const endYear = 2030;
-    const yearDropdown = document.getElementById('year');
-
-    for (let year = startYear; year <= endYear; year++) {
-        const option = document.createElement('option');
-        option.value = year;
-        option.text = year;
-        yearDropdown.appendChild(option);
-    }
-</script>
 </body>
 </html>

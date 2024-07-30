@@ -212,10 +212,8 @@
             <input type="text" name="fullname" id="name" class="input" placeholder="Enter Name" required>
             <input type="email" name="email" id="email" class="input" placeholder="Enter Email" required>
             <input type="phone" name="phone" id="phone" class="input" placeholder="Enter Phone Number" required>
-            <input type="phone" name="course" id="course" class="input" placeholder="Course" disabled>
-
             <select id="year" name="year" required>
-                <option value="" disabled selected>Graduation Year</option>
+                <option value="" disabled selected>Select a year</option>
             </select>
             <div class="experience">
                 <label id="experience">Experience</label>
@@ -279,25 +277,11 @@
         modal.style.display='none';
         document.body.style.overflow = 'auto'; // Enable background scroll
       }
-      window.addEventListener('click', function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Enable background scroll
-            }
-        });
-    </script>
-
-<script>
-    const startYear = 2000;
-    const endYear = 2030;
-    const yearDropdown = document.getElementById('year');
-
-    for (let year = startYear; year <= endYear; year++) {
-        const option = document.createElement('option');
-        option.value = year;
-        option.text = year;
-        yearDropdown.appendChild(option);
+      window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
     }
-</script>
+}
+    </script>
 </body>
 </html>
