@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #E8F7F2;
+    --color2: #E2F8EC;
+    --text-color: #53D690;
+    --text-color2: #7273C1;
+    --black-color: rgb(17, 17, 17);
+    --font-size1: 20px;
+    --font-size2: 28px;
+    --font-size3: 38px;
+    --font-size4: 16px;
+    --white-color1: #F7F1FD;
+    --white-color2: rgba(255, 255, 255, 0.9);
+    --black-color1: #363434e6;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1 {
+    position: relative;
+    display: inline-block;
+}
+
+.container1 img {
+    display: block;
+    width: 100%;
+    border-bottom-left-radius: 10%;
+}
+
+.container1 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.container1 .content h1 {
+    font-size: var(--font-size3);
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.container1 .content p {
+    font-size: var(--font-size1);
+}
+
+.container2 {
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1.4rem;
+}
+
+.container2 .card {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    border-radius: 6px;
+}
+
+.container2 .card:hover {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container2 .card img {
+    width: 100%;
+    height: 200px;
+}
+
+.container2 .card .info {
+    /* margin: 10px 0; */
+}
+
+.container2 .card .info .field,
+.container2 .card .info .collegeName {
+    margin: 5px 0;
+}
+
+.container2 .card .content {
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(27, 27, 27, 0.6);
+    color: #fff;
+    padding: 20px;
+    transition: bottom 0.3s ease;
+}
+
+.container2 .card:hover .content {
+    bottom: 0;
+}
+
+.container2 .card h2 {
+    font-size: var(--font-size1);
+    margin-bottom: 10px;
+}
+
+.container2 .card .designation,
+.container2 .card .lpa {
+    font-size: var(--font-size4);
+    margin: 5px 0;
+}
+
+.container2 .card a i {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.container2 .card a i:hover {
+    color: #fff;
+}
+#container2{
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width:1070px) {
+    .container2{
+        padding: 3rem 2rem;
+    }
+}
+@media screen and (max-width:1010px) {
+    .container2{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width:770px) {
+    .container2{
+        grid-template-columns: auto auto;
+    }
+    .container2 .card h2 {
+        margin-bottom: 20px;
+    }
+    .container2 .card:hover h2{
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width:850px) {
+    .container1 img {
+        height: 80vh;
+    }
+    }
+@media screen and (max-width:600px) {
+    .container2{
+        grid-template-columns:  auto;
+    }
+    .container2 .card:hover .content {
+        bottom: 0;
+        top: 0;
+    }
+}
+
+
+.container3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+}
+.container3 img{
+    width: 100%;
+}
