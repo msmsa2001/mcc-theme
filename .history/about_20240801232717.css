@@ -245,19 +245,7 @@ body{
     .container4 #image {
         width: 350px;
         height: 350px;
-        margin-left: -5rem;
-    }
-    .container4 .section1 .cards {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 10px;
-    }
-    .container3 .logo{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .container3 .logo img {
-        width: 140px;
+        margin-left: -4rem;
     }
 }
 @media screen and (max-width:400px) {

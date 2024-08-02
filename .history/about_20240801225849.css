@@ -176,7 +176,7 @@ body{
     font-weight: 500;
     letter-spacing: .40px;
 }
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1000px) {
     .container4 #image {
         width: 550px;
         height: 550px;
@@ -189,11 +189,15 @@ body{
     .container3 {
         padding: 1.4rem 2rem 1rem;
     }
-    .container4{
-        gap: 1.4rem;
+    .container4 .sec2 {
+        grid-template-columns: auto auto;
+        margin-top: 1rem;
     }
-    .container4 #image {
-        margin-left: -10rem;
+    .container4 .sec1 {
+        grid-template-columns: auto
+    }
+    .container3 .logo img {
+        width: 160px;
     }
 }
 @media screen and (max-width:850px) {
@@ -202,12 +206,6 @@ body{
 }
 .container1 img {
     height: 80vh;
-}
-.container4{
-    grid-template-columns: auto;
-}
-.container4 #image {
-    margin-bottom: 1rem;
 }
 }
 @media screen and (max-width:750px) {
@@ -241,23 +239,6 @@ body{
     }
     .container2 .sec2 .box img {
         width: 80px;
-    }
-    .container4 #image {
-        width: 350px;
-        height: 350px;
-        margin-left: -5rem;
-    }
-    .container4 .section1 .cards {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 10px;
-    }
-    .container3 .logo{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .container3 .logo img {
-        width: 140px;
     }
 }
 @media screen and (max-width:400px) {

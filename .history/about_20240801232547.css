@@ -206,9 +206,6 @@ body{
 .container4{
     grid-template-columns: auto;
 }
-.container4 #image {
-    margin-bottom: 1rem;
-}
 }
 @media screen and (max-width:750px) {
 .container3 .logo{
@@ -241,23 +238,6 @@ body{
     }
     .container2 .sec2 .box img {
         width: 80px;
-    }
-    .container4 #image {
-        width: 350px;
-        height: 350px;
-        margin-left: -5rem;
-    }
-    .container4 .section1 .cards {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 10px;
-    }
-    .container3 .logo{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .container3 .logo img {
-        width: 140px;
     }
 }
 @media screen and (max-width:400px) {

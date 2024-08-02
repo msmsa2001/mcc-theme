@@ -212,8 +212,9 @@ body{
 }
 @media screen and (max-width:750px) {
 .container3 .logo{
-    flex-wrap: wrap;
-    gap: 14px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
 }
 }
 @media screen and (max-width:600px) {
@@ -251,13 +252,6 @@ body{
         display: grid;
         grid-template-columns: auto;
         gap: 10px;
-    }
-    .container3 .logo{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .container3 .logo img {
-        width: 140px;
     }
 }
 @media screen and (max-width:400px) {

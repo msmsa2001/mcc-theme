@@ -250,14 +250,6 @@ body{
     .container4 .section1 .cards {
         display: grid;
         grid-template-columns: auto;
-        gap: 10px;
-    }
-    .container3 .logo{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .container3 .logo img {
-        width: 140px;
     }
 }
 @media screen and (max-width:400px) {
