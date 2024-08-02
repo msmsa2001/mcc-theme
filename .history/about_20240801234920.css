@@ -205,11 +205,6 @@ body{
 }
 .container4{
     grid-template-columns: auto;
-    margin-bottom: 0;
-
-}
-.container3 .logo img {
-    width: 160px;
 }
 .container4 #image {
     margin-bottom: 1rem;
@@ -224,6 +219,7 @@ body{
 @media screen and (max-width:600px) {
 .container4{
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 :root{
     --font-size1: 16px;
