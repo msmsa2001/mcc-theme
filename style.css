@@ -308,12 +308,12 @@ body{
 }
 .carousel .list .item .content{
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 1140px;
     max-width: 80%;
     left: 50%;
     transform: translateX(-50%);
-    padding-right: 30%;
+    padding-right: 34%;
     box-sizing: border-box;
     /* color: #fff; */
     color: var(--black-color1);
@@ -348,14 +348,21 @@ body{
 }
 .carousel .list .item .buttons .lpa{
     font-size: 22px;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 700;
 }
 .carousel .list .item .buttons a{
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: underline;
     font-weight: 700;
-    color: var(--black-color1);
+    color: #0077b5;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    height: 30px;
+    text-decoration: none;
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
@@ -400,7 +407,7 @@ body{
 /* arrows */
 .arrows{
     position: absolute;
-    top: 80%;
+    top: 70%;
     right: 52%;
     z-index: 100;
     width: 300px;
@@ -413,7 +420,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color: rgba(238, 238, 238, 0.285);
     border: none;
     color: #fff;
     font-family: monospace;
