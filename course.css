@@ -96,9 +96,10 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
+    padding: 1rem;
 }
 #tab3 .logo img{
-    width: 100%;
+    width: 140px;
 }
 .tab-content p{
     font-size: var(--font-size);

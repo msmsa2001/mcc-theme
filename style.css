@@ -338,21 +338,22 @@ body{
     font-size: var(--font-size1);
 }
 .carousel .list .item .buttons{
-    /* display: grid;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: 40px; */
     display: flex;
+    background: #ffffff41;
+    width: max-content;
+    padding: 8px 30px;
+    border-radius: 20px;
     gap: 1.2rem;
-    /* flex-direction: column; */
     margin-top: 2rem;
 }
 .carousel .list .item .buttons .lpa{
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 .carousel .list .item .buttons a{
-    font-size: 20px;
+    font-size: 16px;
+    border: 1.80px solid #0077b5;
     text-decoration: underline;
     font-weight: 700;
     color: #0077b5;
@@ -1025,12 +1026,16 @@ color: var(--black-color1);
     border-radius: 50%;
     color: #fff;
   }
+  .container7 .sec2 .info .content a{
+    text-decoration: none;
+    color: var(--black-color1);
+  }
   .container7 .sec2 .info .content #title{
     font-weight: 600;
     font-size: var(--font-size1);
     letter-spacing: .10px;
   }
-  .container7 .sec2 .info .content #content-info{
+  .container7 .sec2 .info .content  #content-info{
     font-weight: 400;
     font-size: 15px;
   }
