@@ -83,10 +83,13 @@ function openTab(tabName) {
 
 // window.onload=setRandomBackgroundColors();
 
-// function setGradientBackgrounds() {
-//     const images = document.querySelectorAll('.carousel .list .item img');
-//     images.forEach(img => {
-//         img.style.backgroundImage = 'linear-gradient(to bottom right, #E0F2F1, #B9FBC0)'; // Light green and white gradient
-//     });
-// }
+function setGradientBackgrounds() {
+    const images = document.querySelectorAll('.carousel .list .item img');
+    images.forEach(img => {
+        img.style.backgroundImage = 'linear-gradient(to bottom right, #E0F2F1, #B9FBC0)'; // Light green and white gradient
+    });
+}
 
+
+// Call the function to set the gradient background on page load
+window.onload = setGradientBackgrounds;

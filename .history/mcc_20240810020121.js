@@ -65,28 +65,24 @@ function openTab(tabName) {
 // javaScript for google review section
 
 
-// function getRandomLightColor() {
-//     const base = 180; 
-//     const randomComponent = () => Math.floor(Math.random() * (255 - base) + base);
-//     const r = randomComponent();
-//     const g = randomComponent();
-//     const b = randomComponent();
-//     return `rgb(${r}, ${g}, ${b})`;
-// }
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color1 = '#';
+    let color2= '#';
+    for (let i = 0; i < 4; i++) {
+        color1 += letters[Math.floor(Math.random() * 16)];
+        color2 += letters[Math.floor(Math.random() * 16)];
 
-// function setRandomBackgroundColors() {
-//     const images = document.querySelectorAll('.carousel .list .item img');
-//     images.forEach(img => {
-//         img.style.backgroundColor = getRandomLightColor();
-//     });
-// }
+    }
+    return color1;
+}
 
-// window.onload=setRandomBackgroundColors();
+function setRandomBackgroundColors() {
+    const images = document.querySelectorAll('.carousel .list .item img');
+    images.forEach(img => {
+        img.style.backgroundColor = getRandomColor();
+    });
+}
 
-// function setGradientBackgrounds() {
-//     const images = document.querySelectorAll('.carousel .list .item img');
-//     images.forEach(img => {
-//         img.style.backgroundImage = 'linear-gradient(to bottom right, #E0F2F1, #B9FBC0)'; // Light green and white gradient
-//     });
-// }
-
+// Call the function to set random background colors on page load
+window.onload=setRandomBackgroundColors();

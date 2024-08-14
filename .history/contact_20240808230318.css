@@ -124,7 +124,7 @@ font-size: var(--font-size3);
 letter-spacing: 1px;
 font-weight: 600;
 }
-.slider {
+.logos {
     overflow: hidden;
     padding: 30px 0 0;
     background: white;
@@ -133,7 +133,7 @@ font-weight: 600;
     display: flex;
 }
 
-.slider .slide-track  .card1{
+.logos .logos-slide .card1{
     background: #fff;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.114);
     padding: 10px;
@@ -142,30 +142,30 @@ font-weight: 600;
     gap: 10px;
     border-radius: 8px;
 }
-.slider .slide-track  .card1 img{
+.logos .logos-slide .card1 img{
     border-radius: 50%;
     width: 100px;
     height: 100px;
 }
-.slider .slide-track .card1 .content{
+.logos .logos-slide .card1 .content{
     display: flex;
     justify-content: center;
     /* align-items: scenter; */
     flex-direction: column;
     gap: 4px;
 }
-.slider .slide-track  .card1 .content .name{
+.logos .logos-slide .card1 .content .name{
     font-size: var(--black-color1);
     font-style: italic;
     font-size: var(--font-size4);
     font-weight: 500;
 }
-.slider .slide-track  .card1 .content .designation{
+.logos .logos-slide .card1 .content .designation{
     font-size: var(--black-color1);
     font-size: var(--font-size1);
     font-weight: 600;
 }
-.slider .slide-track  .card1 .content a i{
+.logos .logos-slide .card1 .content a i{
     color: #fff;
     background: var(--text-color);
     padding: 10px;
@@ -223,6 +223,14 @@ font-weight: 600;
     }
   }
 
+  .slider {
+    background: white;
+    height: 100px;
+    margin: 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    /* width: 960px; */
+  }
   .slider::before, .slider::after{
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
@@ -245,14 +253,14 @@ font-weight: 600;
     display: flex;
     width: calc(250px * 14);
   }
-  .slider .slide{
-    /* height: 100px; */
-    /* width: 250px; */
+  .slider .slide,.slider-2 .slide {
+    height: 100px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .slider .slide img{
+  .slider .slide img,.slider-2 .slide img{
     width: 180px;
   }
 

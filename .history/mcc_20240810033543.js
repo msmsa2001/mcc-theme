@@ -90,3 +90,36 @@ function openTab(tabName) {
 //     });
 // }
 
+function getRandomGreenColor() {
+    // Generate a random light green color
+    const r = Math.floor(Math.random() * 100) + 155; // Light green range
+    const g = Math.floor(Math.random() * 100) + 155; // Light green range
+    const b = Math.floor(Math.random() * 100) + 155; // Light green range
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+function getRandomWhiteShade() {
+    // Generate a random shade of white
+    const shade = Math.floor(Math.random() * 50); // Light gray/white shades
+    return `rgb(${shade}, ${shade}, ${shade})`;
+}
+
+function getRandomGreenWhiteGradient() {
+    const greenColor = getRandomGreenColor();
+    const whiteShade = getRandomWhiteShade();
+    return `linear-gradient(to bottom right, ${greenColor}, ${whiteShade})`;
+}
+
+function setRandomGradientBackgrounds() {
+    const images = document.querySelectorAll('.carousel .list .item img');
+    images.forEach(img => {
+        img.style.backgroundImage = getRandomGreenWhiteGradient();
+    });
+}
+
+// Call the function to set random gradient backgrounds on page load
+window.onload = setRandomGradientBackgrounds;
+
+
+// Call the function to set the gradient background on page load
+window.onload = setGradientBackgrounds;

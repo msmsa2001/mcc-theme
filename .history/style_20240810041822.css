@@ -306,7 +306,12 @@ body{
     object-fit: cover;
     /* background-image: linear-gradient(to right, var(--color2),var(--text-color)); */
 }
-.carousel .list .item .content{
+.carousel .list .item .section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .list .item .section .content{
     position: absolute;
     top: 20%;
     width: 1140px;
@@ -317,7 +322,7 @@ body{
     box-sizing: border-box;
     /* color: #fff; */
     color: var(--black-color1);
-    /* text-shadow: 0 5px 10px #0004; */
+    text-shadow: 0 5px 10px #0004;
 }
 .carousel .list .item .name{
     font-weight: 600;
@@ -440,7 +445,7 @@ body{
 .carousel .list .item:nth-child(1) .content .buttons
 {
     transform: translateY(50px);
-    /* filter: blur(10px); */
+    filter: blur(20px);
     opacity: 0;
     animation: showContent .5s 1s linear 1 forwards;
 }

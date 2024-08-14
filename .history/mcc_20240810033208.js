@@ -90,3 +90,31 @@ function openTab(tabName) {
 //     });
 // }
 
+function getRandomLightGreenColor() {
+    const base = 180; // Light greenish colors
+    const randomComponent = () => Math.floor(Math.random() * (255 - base) + base);
+    const r = randomComponent();
+    const g = randomComponent();
+    const b = randomComponent();
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+function getRandomWhiteColor() {
+    return `rgb(${Math.floor(Math.random() * 50)}, ${Math.floor(Math.random() * 50)}, ${Math.floor(Math.random() * 50)})`; 
+}
+
+function setRandomGradientBackgrounds() {
+    const images = document.querySelectorAll('.carousel .list .item img');
+    images.forEach(img => {
+        const color1 = getRandomLightGreenColor();
+        const color2 = getRandomWhiteColor();
+        img.style.backgroundImage = `linear-gradient(to bottom right, ${color1}, ${color2})`;
+    });
+}
+
+// Call the function to set random gradient backgrounds on page load
+window.onload = setRandomGradientBackgrounds;
+
+
+// Call the function to set the gradient background on page load
+window.onload = setGradientBackgrounds;

@@ -65,28 +65,22 @@ function openTab(tabName) {
 // javaScript for google review section
 
 
-// function getRandomLightColor() {
-//     const base = 180; 
-//     const randomComponent = () => Math.floor(Math.random() * (255 - base) + base);
-//     const r = randomComponent();
-//     const g = randomComponent();
-//     const b = randomComponent();
-//     return `rgb(${r}, ${g}, ${b})`;
-// }
+function getRandomGreenColor() {
+    const letters = '0123456789ABCDEF';
+    let green = '#';
+    green += '00'; // Red component set to 00 for green shades
+    green += letters[Math.floor(Math.random() * 16)] + 'F'; // Generate green component with a random value
+    green += '00'; // Blue component set to 00 for pure green shades
+    return green;
+}
 
-// function setRandomBackgroundColors() {
-//     const images = document.querySelectorAll('.carousel .list .item img');
-//     images.forEach(img => {
-//         img.style.backgroundColor = getRandomLightColor();
-//     });
-// }
-
-// window.onload=setRandomBackgroundColors();
-
-// function setGradientBackgrounds() {
-//     const images = document.querySelectorAll('.carousel .list .item img');
-//     images.forEach(img => {
-//         img.style.backgroundImage = 'linear-gradient(to bottom right, #E0F2F1, #B9FBC0)'; // Light green and white gradient
-//     });
-// }
-
+function setRandomBackgroundColors() {
+    const images = document.querySelectorAll('.carousel .list .item img');
+    images.forEach(img => {
+        const white = '#FFFFFF';
+        const green = getRandomGreenColor();
+        img.style.backgroundImage = `linear-gradient(to right, ${white}, ${green})`;
+    });
+}
+// Call the function to set random background colors on page load
+window.onload=setRandomBackgroundColors();

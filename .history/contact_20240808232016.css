@@ -223,6 +223,14 @@ font-weight: 600;
     }
   }
 
+  /* .slider {
+    background: white;
+    height: 100px;
+    margin: 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    /* width: 960px; */
+  } */
   .slider::before, .slider::after{
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
@@ -246,8 +254,8 @@ font-weight: 600;
     width: calc(250px * 14);
   }
   .slider .slide{
-    /* height: 100px; */
-    /* width: 250px; */
+    height: 100px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
