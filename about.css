@@ -36,11 +36,10 @@ body{
 }
 .container1 .content{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    text-align: center;
+    top: 30%;
+    left: 5%;
+    right: 40%;
+    /* transform: translate(-50%,-50%); */
 }
 .container1 .content h1{
     font-size: var(--font-size3);
@@ -199,6 +198,7 @@ body{
     }
     .container4{
         gap: 1.4rem;
+        padding: 2rem 3rem 2rem 0;
     }
     .container4 #image {
         margin-left: -10rem;

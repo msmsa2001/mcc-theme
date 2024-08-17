@@ -176,12 +176,14 @@ body{
 .container3{
     display: flex;
     justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: auto auto; */
     gap: 3rem;
     padding: 2rem 5rem;
 }
 .container3 img{
-    /* height: 500px; */
-    /* width: 400px; */
+    /* height: 400px; */
+    width: 350px; 
 }
 .container3 .content h2{
     font-size: var(--font-size2);
