@@ -30,25 +30,24 @@ body{
     display: inline-block;
 }
 .container1 img{
-    display: block;
     width: 100%;
     border-bottom-left-radius: 10%;
 }
 .container1 .content{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 38%;
     transform: translate(-50%,-50%);
-    color: #fff;
-    text-align: center;
+    /* color: #fff; */
 }
 .container1 .content h1{
     font-size: var(--font-size3);
     letter-spacing: 1px;
     margin-bottom: 14px;
+    font-weight: 600;
 }
 .container1 .content p{
-    font-size: var(--font-size1);
+    font-size: 18px;
 }
 
 
