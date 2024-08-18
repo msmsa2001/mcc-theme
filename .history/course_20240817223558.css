@@ -386,16 +386,15 @@ form input.has-content {
         .container1 .content h1 {
             font-size: var(--font-size1);
         }
-        .container1 img{
-            height: 64vh;
-        }
     }
 
     @media screen and (max-width:390px) {
         .container3 img{
             width: 300px;
         }
-        
+        .container1 img{
+            height: 64vh;
+        }
         .container1 .content {
             left: 36%;
     }
