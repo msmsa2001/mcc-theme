@@ -380,14 +380,8 @@ form input.has-content {
         .container2{
             padding: 2rem 1rem;
         }
-        .container1 .content p {
-            font-size: 12px;
-        }
-        .container1 .content h1 {
-            font-size: var(--font-size1);
-        }
         .container1 img{
-            height: 64vh;
+            height: 60vh;
         }
     }
 
