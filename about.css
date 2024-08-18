@@ -30,9 +30,11 @@ body{
     display: inline-block;
 }
 .container1 img{
-    display: block;
     width: 100%;
     border-bottom-left-radius: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .container1 .content{
     position: absolute;
@@ -71,7 +73,7 @@ body{
 
 }
 .container2 .sec2 .box .content h4{
-    color: var(--text-color2);
+    color: var(--text-color);
     font-size: var(--font-size1);
     letter-spacing: 1px;
     font-weight: 500;
@@ -198,29 +200,33 @@ body{
     }
     .container4{
         gap: 1.4rem;
-        padding: 2rem 3rem 2rem 0;
+        padding: 2rem 3rem 2rem 2rem;
+        grid-template-columns: auto;
+        margin-bottom: 0;
     }
-    .container4 #image {
-        margin-left: -10rem;
+    .container4 .sec {
+        margin-left: -6rem;
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width:850px) {
 .container2{
     grid-template-columns: auto;
 }
-.container1 img {
-    height: 80vh;
-}
-.container4{
-    grid-template-columns: auto;
-    margin-bottom: 0;
-
-}
 .container3 .logo img {
     width: 160px;
 }
-.container4 #image {
-    margin-bottom: 1rem;
+.container1 img {
+    height: 80vh;
+}
+.container1 .content p {
+    font-size: 15px;
+}
+.container1 .content h1 {
+    font-size: 22px;
+}
+.container1 img{
+    height: 50vh;
 }
 }
 @media screen and (max-width:750px) {
@@ -231,7 +237,7 @@ body{
 }
 @media screen and (max-width:600px) {
 .container4{
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 :root{
     --font-size1: 16px;
@@ -240,30 +246,10 @@ body{
     --font-size4: 14px;
     --font-size4: 14px;
 }
-.container4 h2{
-    margin-bottom: 0.2rem;
-    line-height: 34px;
-}
 }
 @media screen and (max-width:500px) {
-    .container4 .sec1 .inner-sec {
-        grid-template-columns: auto;
-    }
-    .container4 .sec2 {
-        grid-template-columns: auto;
-    }
     .container2 .sec2 .box img {
         width: 80px;
-    }
-    .container4 #image {
-        width: 350px;
-        height: 350px;
-        margin-left: -5rem;
-    }
-    .container4 .section1 .cards {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 10px;
     }
     .container3 .logo{
         display: grid;
@@ -272,20 +258,22 @@ body{
     .container3 .logo img {
         width: 140px;
     }
+    .container4 .section1 .cards {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .container4 .sec {
+        width: 400px;
+        height: 400px;
+}
 }
 @media screen and (max-width:400px) {
 .container2 .sec2 .box{
     flex-direction: column;
 }
+
 .container4 h2 {
     word-break: break-word;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; */
 }
-/* .container4 h2::after{
-    content: " ";
-    white-space: pre;
-} */
 }

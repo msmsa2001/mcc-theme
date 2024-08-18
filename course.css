@@ -33,6 +33,7 @@ body{
     width: 100%;
     border-bottom-left-radius: 10%;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 .container1 .content{
