@@ -32,6 +32,8 @@ body{
 .container1 img{
     width: 100%;
     border-bottom-left-radius: 10%;
+    background-size: cover;
+    position: relative;
 }
 .container1 .content{
     position: absolute;
@@ -101,7 +103,7 @@ body{
     width: 140px;
 }
 .tab-content p{
-    font-size: var(--font-size);
+    font-size: 16px;
     color: var(--black-color1);
     margin-top: 14px;
 }
@@ -359,6 +361,15 @@ form input.has-content {
         .modal .modal-content form{
             width: auto;
         }
+        .container1 .content p {
+            font-size: 15px;
+        }
+        .container1 .content h1 {
+            font-size: 22px;
+        }
+        .container1 img{
+            height: 70vh;
+        }
         }
 
     @media screen and (max-width:500px) {
@@ -369,16 +380,22 @@ form input.has-content {
         .container2{
             padding: 2rem 1rem;
         }
+        .container1 .content p {
+            font-size: 12px;
+        }
+        .container1 .content h1 {
+            font-size: var(--font-size1);
+        }
     }
 
     @media screen and (max-width:390px) {
         .container3 img{
             width: 300px;
         }
-        .container1 .content p {
-            font-size: 15px;
+        .container1 img{
+            height: 64vh;
         }
-        .container1 .content h1 {
-            font-size: var(--font-size1);
-        }
+        .container1 .content {
+            left: 36%;
     }
+}
