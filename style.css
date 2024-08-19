@@ -1101,6 +1101,10 @@ color: var(--black-color1);
     .container7{
       padding: 2rem 3rem;
     }
+    .container7 .sec1 h2 {
+      font-size: var(--font-size2);
+      line-height: 32px;
+    }
     .container2 .inner-sec .sec2{
       margin-bottom: 24rem;
     }.container4{
