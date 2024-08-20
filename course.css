@@ -91,7 +91,7 @@ body{
     border-bottom: 2px solid var(--color2);
     border-right: 2px solid var(--color2);
     border-left: 2px solid var(--color2);
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     background: white;
     display: none;
     border-bottom-left-radius: 10px;
@@ -110,7 +110,32 @@ body{
 .tab-content p{
     font-size: 16px;
     color: var(--black-color1);
-    margin-top: 14px;
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 26px;
+}
+.container2 .sec1 .curriculum{
+    padding: 20px 20px 20px 0;
+}
+.container2 .sec1 h2{
+    font-size: 16px;
+    background: var(--color2);
+    padding: 10px 30px;
+    border-radius: 0 20px 20px 0;
+    width: max-content;
+    font-size: 17px; 
+}
+.container2 .sec1 .curriculum .title{
+    font-size: 19px;
+    padding-left: 20px;
+    font-weight: 500;
+    margin-top: 17px;
+    color: var(--text-color);
+}
+.container2 .sec1 .curriculum p{
+    font-size: 15px; 
+    margin-top: 5px;
+    padding-left: 36px;
 }
 .tab-content.active {
     display: block;
