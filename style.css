@@ -283,16 +283,17 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-@media (max-width:1380px) and (min-width:1260px) {
+@media (max-width:1380px) and (min-width:1110px) {
      .wrapper-2{
-        padding-bottom: 5rem;
+        padding-bottom: 30rem;
      }
 }
 @media (max-width:1800px) and (min-width:1381px) {
     .wrapper-2{
-       padding-bottom: 28rem;
+       padding-bottom: 32rem;
     }
 }
+
 
 
 /* container3 start */

@@ -125,6 +125,15 @@ body{
     width: max-content;
     font-size: 17px; 
 }
+.container2 .sec1 .curriculum ul{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+.container2 .sec1 .curriculum ul li{
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 15px;
+}
 .container2 .sec1 .curriculum .title{
     font-size: 19px;
     padding-left: 20px;
