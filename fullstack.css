@@ -200,6 +200,11 @@ body{
     color: var(--black-color1);
     letter-spacing: .50px;
 }
+.container2 .sec2 .course-info h3 sub{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
 .container2 .sec2 .course-info button{
     width: 100%;
     margin-top: 1.8rem;
