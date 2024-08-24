@@ -1170,7 +1170,7 @@ color: var(--black-color1);
 
   }
   .carousel{
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
   .container2 .inner-sec .sec2 .row2 {
     padding: 0 0 20px;
@@ -1180,6 +1180,9 @@ color: var(--black-color1);
 @media screen and (max-width:400px) {
   .container7 {
     padding: 2rem 1rem;
+}
+.arrows{
+  top: 85%;
 }
 }
 @media screen and (max-width:450px) {

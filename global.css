@@ -557,7 +557,10 @@ footer .section1{
     }
     @media screen and (max-width:400px) {
         footer .links {
-            padding: 10px;
+            padding: 20px;
+        }
+       footer .section1 .google-review p {
+            margin: 2rem 0 0 20px;
         }
     }
     @media screen and (max-width:600px) {
